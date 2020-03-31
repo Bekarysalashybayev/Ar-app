@@ -1,0 +1,195 @@
+fileFormatVersion: 2
+guid: 0deb565f4c5d7c4429ffcf39fc642669
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Box001
+    100004: Box002
+    100006: Box003
+    100008: Box004
+    100010: Box005
+    100012: Box006
+    100014: Box007
+    100016: Box008
+    100018: Box009
+    100020: TextPlus001
+    100022: TextPlus002
+    100024: TextPlus003
+    100026: TextPlus004
+    100028: TextPlus005
+    100030: TextPlus006
+    100032: TextPlus007
+    100034: TextPlus008
+    400000: //RootNode
+    400002: Box001
+    400004: Box002
+    400006: Box003
+    400008: Box004
+    400010: Box005
+    400012: Box006
+    400014: Box007
+    400016: Box008
+    400018: Box009
+    400020: TextPlus001
+    400022: TextPlus002
+    400024: TextPlus003
+    400026: TextPlus004
+    400028: TextPlus005
+    400030: TextPlus006
+    400032: TextPlus007
+    400034: TextPlus008
+    2100000: Box001Mat
+    2100002: Box002Mat
+    2100004: Box003Mat
+    2100006: Box004Mat
+    2100008: Box005Mat
+    2100010: Box006Mat
+    2100012: Box007Mat
+    2100014: Box008Mat
+    2100016: Box009Mat
+    2100018: TextPlus001Mat
+    2100020: TextPlus002Mat
+    2100022: TextPlus003Mat
+    2100024: TextPlus004Mat
+    2100026: TextPlus005Mat
+    2100028: TextPlus006Mat
+    2100030: TextPlus007Mat
+    2100032: TextPlus008Mat
+    2300000: Box001
+    2300002: Box002
+    2300004: Box003
+    2300006: Box004
+    2300008: Box005
+    2300010: Box006
+    2300012: Box007
+    2300014: Box008
+    2300016: Box009
+    2300018: TextPlus001
+    2300020: TextPlus002
+    2300022: TextPlus003
+    2300024: TextPlus004
+    2300026: TextPlus005
+    2300028: TextPlus006
+    2300030: TextPlus007
+    2300032: TextPlus008
+    3300000: Box001
+    3300002: Box002
+    3300004: Box003
+    3300006: Box004
+    3300008: Box005
+    3300010: Box006
+    3300012: Box007
+    3300014: Box008
+    3300016: Box009
+    3300018: TextPlus001
+    3300020: TextPlus002
+    3300022: TextPlus003
+    3300024: TextPlus004
+    3300026: TextPlus005
+    3300028: TextPlus006
+    3300030: TextPlus007
+    3300032: TextPlus008
+    4300000: Box001
+    4300002: Box002
+    4300004: Box003
+    4300006: Box004
+    4300008: Box005
+    4300010: Box006
+    4300012: Box007
+    4300014: Box008
+    4300016: Box009
+    4300018: TextPlus001
+    4300020: TextPlus002
+    4300022: TextPlus003
+    4300024: TextPlus004
+    4300026: TextPlus005
+    4300028: TextPlus006
+    4300030: TextPlus007
+    4300032: TextPlus008
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
