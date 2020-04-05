@@ -63,6 +63,8 @@ abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.Tou
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Lean.Touch.LeanTouchEvents
 d3c76b14a25eebd3a3323dd43297919c Unity.TextMeshPro.dll:TMPro.TMP_InputField
+71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
+71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 a1fcc866397a836af63817d24343caca Assembly-CSharp.dll:Lean.Common.Examples.LeanDocumentation
 9845bdbc613fa56187574b0df6ae33ed Assembly-CSharp.dll:Lean.Touch.LeanSelect
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
@@ -100,6 +102,7 @@ abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.Tou
 fe29ae2aa38c9237768b1f22cddf449d Assembly-CSharp.dll:Lean.Touch.LeanTwistRotateAxis
 eb27b06c0eaa67d17f6c84edaee630af Assembly-CSharp.dll:Lean.Touch.LeanRoll
 cf1ad9af57e51d3949ba525fb4534068 Assembly-CSharp.dll:Lean.Touch.LeanDestroy
+8f9a3cedbcff5227ff4a820dbbc20f46 Assembly-CSharp.dll:.NewLogin
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 06f0fef534ca4c1d6064fd77a26bf722 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 780e8f682b3221346c034a6712a0fd25 UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -207,6 +210,7 @@ fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBe
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
 575461010b64bd023bfe1f66ea5b7428 Assembly-CSharp.dll:.NewRegister
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.newMenu
+0ba8fa0780a005290cc3452d38e614b8 Assembly-CSharp.dll:.Profile
 a73cc7e0d8575dd7105e0f0616a7253a Assembly-CSharp.dll:Lean.Touch.LeanPulseScale
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 f130a8423e6424a57c8b7679ec028c5d Assembly-CSharp.dll:Lean.Touch.LeanTwistRotate
@@ -365,5 +369,3 @@ fe10de86e42ce80dc24cf76ac1c87c2a Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 69167579cf7fcbb2676fc1e675963dcd Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehaviour
 fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
-8f9a3cedbcff5227ff4a820dbbc20f46 Assembly-CSharp.dll:.NewLogin
-0ba8fa0780a005290cc3452d38e614b8 Assembly-CSharp.dll:.Profile
