@@ -5,37 +5,61 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/Menu.unity
+  - enabled: 0
+    path: Assets/Scenes/old/Menu.unity
     guid: f7e02c9c1d36e9e49b749f42981aa8a1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Book.unity
     guid: 89a59ff81d836fc4799fc48e733aa324
-  - enabled: 1
-    path: Assets/Scenes/login.unity
+  - enabled: 0
+    path: Assets/Scenes/old/login.unity
     guid: 15c42ad7746898f4bacfeef55df4d3af
-  - enabled: 1
-    path: Assets/Scenes/Main.unity
+  - enabled: 0
+    path: Assets/Scenes/old/Main.unity
     guid: e55daa776f2f823468395ab1936d17e0
-  - enabled: 1
-    path: Assets/Scenes/Theory.unity
+  - enabled: 0
+    path: Assets/Scenes/old/Theory.unity
     guid: 5971b01b58a1e4e4497c91565f345158
-  - enabled: 1
-    path: Assets/Scenes/Books.unity
+  - enabled: 0
+    path: Assets/Scenes/old/Books.unity
     guid: 6afb827f869fb56419e0067f38c52c50
-  - enabled: 1
-    path: Assets/Scenes/ex.unity
+  - enabled: 0
+    path: Assets/Scenes/old/ex.unity
     guid: 2f6aaa33fd7abb9479f008dbe72b755b
-  - enabled: 1
-    path: Assets/Scenes/TheoryDetails.unity
+  - enabled: 0
+    path: Assets/Scenes/old/TheoryDetails.unity
     guid: 536838e172c83ea4aaee7cb3907301be
-  - enabled: 1
-    path: Assets/Scenes/Test.unity
+  - enabled: 0
+    path: Assets/Scenes/old/Test.unity
     guid: a6323fcc2a4c9b2469ba0f315e6f08b2
-  - enabled: 1
-    path: Assets/Scenes/TestLebel.unity
+  - enabled: 0
+    path: Assets/Scenes/old/TestLebel.unity
     guid: 59de9c151cd055c4aaa810a067cbd19b
-  - enabled: 1
-    path: Assets/Scenes/TestDetail.unity
+  - enabled: 0
+    path: Assets/Scenes/old/TestDetail.unity
     guid: 3ca447e7bdf54bd45ad89a33669f1acd
+  - enabled: 0
+    path: Assets/Scenes/NewLogin.unity
+    guid: 687973d4d64b54e4aa8ec8f7e6bd1cc8
+  - enabled: 1
+    path: Assets/Scenes/NewTheory.unity
+    guid: 465fcd0b747d6674ca4a49a121ea0e19
+  - enabled: 1
+    path: Assets/Scenes/NewThoryDesc.unity
+    guid: ac2dd1cd1ec71dc40888ad4f51ba3105
+  - enabled: 1
+    path: Assets/Scenes/RegisterMenu.unity
+    guid: a5f8438577a10954db2bc4d21ad235b4
+  - enabled: 1
+    path: Assets/Scenes/Register.unity
+    guid: 1d0192ebc2057104a96591ca1be51246
+  - enabled: 1
+    path: Assets/Scenes/Profile.unity
+    guid: b4783afbb7933c64ba4035324c6e38bf
+  - enabled: 1
+    path: Assets/Scenes/Scan.unity
+    guid: 9fa56fa7f8350944c8cae4eb3f264602
+  - enabled: 1
+    path: Assets/Scenes/Login.unity
+    guid: beb4dcf5393ef104db963c9d7bf1b9de
   m_configObjects: {}

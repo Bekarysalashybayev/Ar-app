@@ -899,7 +899,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 635099241}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7d855ddac25da94098b1a70896adc91, type: 3}
+  m_Script: {fileID: 11500000, guid: 79392906579b08f458d78b9d577f2a26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &648647491
@@ -1048,7 +1048,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 635099246}
-        m_MethodName: Back
+        m_MethodName: Theory
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
