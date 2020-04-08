@@ -1,20 +1,21 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Networking;
-using SimpleJSON;
 using UnityEngine.SceneManagement;
-using System;
+using UnityEngine.Networking;
+using static ContentTheory;
+
+
 
 public class Profile : MonoBehaviour
 {
-    public Text user;
+    public Text userName;
+    public Text score;
+
     void Start()
     {
-        //StartCoroutine(loginDB(PlayerPrefs.GetString("userName"), PlayerPrefs.GetString("password")));
-        user.text = PlayerPrefs.GetString("userName");
-       
+        // user.text = PlayerPrefs.GetString("userName");
+        UpdateItems();
     }
 
     // Update is called once per frame
@@ -23,48 +24,80 @@ public class Profile : MonoBehaviour
         
     }
 
+    public void UpdateItems()
+    {
+        if (PlayerPrefs.GetString("user") == "")
+        {
+            string url = "https://bekarysalashybaev.000webhostapp.com/arrapp/getUser.php";
+            WWWForm form = new WWWForm();
+            form.AddField("username", PlayerPrefs.GetString("userName"));
+            UnityWebRequest www = UnityWebRequest.Post(url, form);
+            StartCoroutine(GetUser(www));
+        }
+        else
+        {
+            OnReceivedModels();
+        }
+        
+    }
+
+    void OnReceivedModels()
+    {
+        userName.text = PlayerPrefs.GetString("user");
+        score.text = "Scores: " + PlayerPrefs.GetString("score");
+    }
+
     public void LogOut()
     {
         PlayerPrefs.SetString("userName", "");
         PlayerPrefs.SetString("password", "");
+        PlayerPrefs.SetString("user", "");
+        PlayerPrefs.SetString("id", "");
+        PlayerPrefs.SetString("score", "");
         SceneManager.LoadScene(6);
     }
 
-    IEnumerator loginDB(string username, string password)
+
+
+    IEnumerator GetUser(UnityWebRequest www)
     {
-        WWWForm form = new WWWForm();
-        form.AddField("loginUser", username);
-        form.AddField("loginPass", password);
+        yield return www.SendWebRequest();
 
-        using (UnityWebRequest www = UnityWebRequest.Post("https://bekarysalashybaev.000webhostapp.com/arrapp/getDate.php", form))
+
+        if (www.isNetworkError || www.isHttpError)
         {
-            yield return www.SendWebRequest();
-
-            if (www.isNetworkError || www.isHttpError)
+           // Debug.Log(www.error);
+            SceneManager.LoadScene(6);
+        }
+        else
+        {
+            if (www.downloadHandler.text == "0")
             {
-                Debug.Log(www.error);
+                //Debug.Log(www.downloadHandler.text);
+                SceneManager.LoadScene(6);
             }
             else
             {
-                Debug.Log(www.downloadHandler.text);
-                if (www.downloadHandler.text.Equals("UserName does not exists"))
-                {
-                    SceneManager.LoadScene(6);
-                }
-
-                else
-                {
-                    if (www.downloadHandler.text.Equals("Wrong Credentials"))
-                    {
-                        SceneManager.LoadScene(6);
-                    }
-                    else
-                    {
-                        SceneManager.LoadScene(4);
-                    }
-
-                }
+                User[] users = JsonHelper.getJsonArray<User>(www.downloadHandler.text);
+                userName.text = users[0].firstName + " " + users[0].lastName;
+                score.text = "Scores: " + users[0].level;
+                PlayerPrefs.SetString("user", users[0].firstName + " " + users[0].lastName);
+                PlayerPrefs.SetString("score", users[0].level);
+                PlayerPrefs.SetString("id", users[0].id);
+                //Debug.Log(www.downloadHandler.text);
+                //Debug.Log(PlayerPrefs.GetString("user"));
             }
         }
+    }
+
+
+
+    [System.Serializable]
+    public class User
+    {
+        public string id;
+        public string firstName;
+        public string lastName;
+        public string level;
     }
 }

@@ -34,7 +34,7 @@ public class ContentTheory : MonoBehaviour
         {
             if ( this.name.text != this.lastVal)
             {
-                string url = "http://localhost/get/getDate.php";
+                string url = "http://augmented.zzz.com.ua/ar/getTheoriesLike.php";
                 WWWForm form = new WWWForm();
                 form.AddField("name", this.name.text);
                 UnityWebRequest www = UnityWebRequest.Post(url, form);
@@ -57,7 +57,7 @@ public class ContentTheory : MonoBehaviour
 
     public void UpdateItems()
     {
-        string url = "http://localhost/get/getitems.php";
+        string url = "http://augmented.zzz.com.ua/ar/getTheories.php";
         WWWForm form = new WWWForm();
         UnityWebRequest www = UnityWebRequest.Post(url, form);
         StartCoroutine(GetItems(www, results => OnReceivedModels(results)));
@@ -92,15 +92,27 @@ public class ContentTheory : MonoBehaviour
             view.tButton.onClick.AddListener(
                 () =>
                 {
-                    if (theoryGameObject.activeSelf)
+                    Scene scene = SceneManager.GetActiveScene();
+                    if (scene.name == "NewTheory")
                     {
-                        SceneManager.LoadScene(1);
-                        Debug.Log(model.id + "is clicked by theory");
+                        if (theoryGameObject.activeSelf)
+                        {
+                            SceneManager.LoadScene("NewThoryDesc");
+                           // Debug.Log(model.id + "is clicked by theory");
+                        }
+                        else if (testGameObject.activeSelf)
+                        {
+                            Debug.Log(model.id + "is clicked by test");
+                        }
                     }
-                    if (testGameObject.activeSelf)
+                    else
                     {
-                        Debug.Log(model.id + "is clicked by test");
+                        Level.category = model.name;
+                        Level.theoryid = model.id;
+                        Result.category = model.name;
+                        SceneManager.LoadScene("Level");
                     }
+                    
 
                 }
                 );
@@ -117,7 +129,7 @@ public class ContentTheory : MonoBehaviour
         if (www.isNetworkError || www.isHttpError)
         {
             TeoriesItemModel[] results = new TeoriesItemModel[0];
-            Debug.Log(www.error);
+            //Debug.Log(www.error);
             callback(results);
         }
         else
@@ -139,7 +151,7 @@ public class ContentTheory : MonoBehaviour
             else
             {
                 this.models = JsonHelper.getJsonArray<TeoriesItemModel>(www.downloadHandler.text);
-                Debug.Log(www.downloadHandler.text);
+               // Debug.Log(www.downloadHandler.text);
                 callback(this.models);
             }     
         }

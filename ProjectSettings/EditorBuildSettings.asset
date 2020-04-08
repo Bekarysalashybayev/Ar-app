@@ -6,43 +6,43 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/old/Menu.unity
-    guid: f7e02c9c1d36e9e49b749f42981aa8a1
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: Assets/Scenes/Book.unity
     guid: 89a59ff81d836fc4799fc48e733aa324
   - enabled: 0
-    path: Assets/Scenes/old/login.unity
-    guid: 15c42ad7746898f4bacfeef55df4d3af
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/old/Main.unity
-    guid: e55daa776f2f823468395ab1936d17e0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/old/Theory.unity
-    guid: 5971b01b58a1e4e4497c91565f345158
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/old/Books.unity
-    guid: 6afb827f869fb56419e0067f38c52c50
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/old/ex.unity
-    guid: 2f6aaa33fd7abb9479f008dbe72b755b
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/old/TheoryDetails.unity
-    guid: 536838e172c83ea4aaee7cb3907301be
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/old/Test.unity
-    guid: a6323fcc2a4c9b2469ba0f315e6f08b2
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/old/TestLebel.unity
-    guid: 59de9c151cd055c4aaa810a067cbd19b
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/old/TestDetail.unity
-    guid: 3ca447e7bdf54bd45ad89a33669f1acd
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: Assets/Scenes/NewLogin.unity
     guid: 687973d4d64b54e4aa8ec8f7e6bd1cc8
   - enabled: 1
-    path: Assets/Scenes/NewTheory.unity
+    path: Assets/Scenes/Menu.unity
     guid: 465fcd0b747d6674ca4a49a121ea0e19
   - enabled: 1
     path: Assets/Scenes/NewThoryDesc.unity
@@ -62,4 +62,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Login.unity
     guid: beb4dcf5393ef104db963c9d7bf1b9de
+  - enabled: 1
+    path: Assets/Scenes/Testing.unity
+    guid: 05c63cf53c9b2f648a0d3c08c4c95af7
+  - enabled: 1
+    path: Assets/Scenes/Level.unity
+    guid: 0a530d483333bc8449c964a0f8fb9585
+  - enabled: 1
+    path: Assets/Scenes/Level-Def.unity
+    guid: f0d7e56c7a085374fa7be4096e5ffbee
+  - enabled: 1
+    path: Assets/Scenes/NewTheory.unity
+    guid: 1ee77b8b6a61efd46a6dd979dcf9023f
+  - enabled: 1
+    path: Assets/Scenes/TestContent.unity
+    guid: b446506945e548a48804c9736d81c73a
   m_configObjects: {}

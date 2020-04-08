@@ -2,13 +2,18 @@ Android
 PlayerPath?
 C:/Users/bekar/Desktop/Все материалы для Дипломной работы/qwerty.apk
 SceneListBegin?
-Assets/Scenes/NewTheory.unity
+Assets/Scenes/Menu.unity
 Assets/Scenes/NewThoryDesc.unity
 Assets/Scenes/RegisterMenu.unity
 Assets/Scenes/Register.unity
 Assets/Scenes/Profile.unity
 Assets/Scenes/Scan.unity
 Assets/Scenes/Login.unity
+Assets/Scenes/Testing.unity
+Assets/Scenes/Level.unity
+Assets/Scenes/Level-Def.unity
+Assets/Scenes/NewTheory.unity
+Assets/Scenes/TestContent.unity
 SceneListEnd?
 71bb6a6b6c8f052f948db64c7dd3ca4f VuforiaScripts.dll:.BoundingBoxRenderer
 3c08375166df118bd1801438fc36b92f Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
@@ -27,6 +32,7 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.G
 e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 201e3fde670b00545944bb3db215c80a UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 560bbc9fb5214b9a13ad0de4fd2b9b43 Assembly-CSharp.dll:Lean.Touch.LeanFingerDown
+6c5b169327d117a4c0e808defcc46c30 Assembly-CSharp.dll:.Testing
 e7a73f5f78ba6445195ec23b74a1ce2d Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:TMPro.TMP_PhoneNumberValidator
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
@@ -63,8 +69,6 @@ abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.Tou
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Lean.Touch.LeanTouchEvents
 d3c76b14a25eebd3a3323dd43297919c Unity.TextMeshPro.dll:TMPro.TMP_InputField
-71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
-71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 a1fcc866397a836af63817d24343caca Assembly-CSharp.dll:Lean.Common.Examples.LeanDocumentation
 9845bdbc613fa56187574b0df6ae33ed Assembly-CSharp.dll:Lean.Touch.LeanSelect
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
@@ -210,7 +214,7 @@ fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBe
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
 575461010b64bd023bfe1f66ea5b7428 Assembly-CSharp.dll:.NewRegister
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.newMenu
-0ba8fa0780a005290cc3452d38e614b8 Assembly-CSharp.dll:.Profile
+4a64f3944f03275d7f7ce5217203d646 Assembly-CSharp.dll:.Profile
 a73cc7e0d8575dd7105e0f0616a7253a Assembly-CSharp.dll:Lean.Touch.LeanPulseScale
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 f130a8423e6424a57c8b7679ec028c5d Assembly-CSharp.dll:Lean.Touch.LeanTwistRotate
@@ -369,3 +373,5 @@ fe10de86e42ce80dc24cf76ac1c87c2a Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 69167579cf7fcbb2676fc1e675963dcd Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehaviour
 fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
+7c18161cee91feb2c14f9765993a4a43 Assembly-CSharp.dll:.Level
+a6a3b6c458fafbb69fd38a17827a25a4 Assembly-CSharp.dll:.Result

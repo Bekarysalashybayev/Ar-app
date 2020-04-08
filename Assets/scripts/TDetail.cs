@@ -38,27 +38,27 @@ public class TDetail : MonoBehaviour
         WWWForm form = new WWWForm();
         form.AddField("id", id);
 
-        using (UnityWebRequest www = UnityWebRequest.Post("http://localhost/get/getDate.php", form))
+        using (UnityWebRequest www = UnityWebRequest.Post("http://augmented.zzz.com.ua/ar/getTheory.php", form))
         {
             yield return www.SendWebRequest();
 
             if (www.isNetworkError || www.isHttpError)
             {
-                Debug.Log(www.error);
+                //Debug.Log(www.error);
             }
             else
             {
-                Debug.Log(www.downloadHandler.text);
+                //Debug.Log(www.downloadHandler.text);
                 this.jsonArray = JSON.Parse(www.downloadHandler.text) as JSONArray;
                 if (id != null)
                 {
                     tname.text = this.jsonArray[0].AsObject["name"];
-                    def.text = getCorrectText(this.jsonArray[0].AsObject["definition"]);
-                    comment.text = this.jsonArray[0].AsObject["comment"];
-                    theorem.text = this.jsonArray[0].AsObject["theorem"];
-                    evidence.text = this.jsonArray[0].AsObject["evidence"];
-                    StartCoroutine(LoadImage(img, this.jsonArray[0].AsObject["img"]));
-                    StartCoroutine(LoadImage(img2, this.jsonArray[0].AsObject["img2"]));
+                    def.text = this.jsonArray[0].AsObject["Definition"];
+                    comment.text = this.jsonArray[0].AsObject["Note"];
+                    theorem.text = this.jsonArray[0].AsObject["Theorema"];
+                    evidence.text = this.jsonArray[0].AsObject["Proof"];
+                    StartCoroutine(LoadImage(img, this.jsonArray[0].AsObject["Picture1"]));
+                    StartCoroutine(LoadImage(img2, this.jsonArray[0].AsObject["Picture2"]));
                 }
             }
         }

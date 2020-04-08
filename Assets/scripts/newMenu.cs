@@ -1,45 +1,69 @@
-﻿using System.Collections;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.Networking;
-using SimpleJSON;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-using System;
+using UnityEditor;
 
 public class newMenu : MonoBehaviour
 {
+
+    
+
     public void Login()
     {
         
         if (PlayerPrefs.GetString("userName") != "" && PlayerPrefs.GetString("password") != "")
         {
             Debug.Log(PlayerPrefs.GetString("userName"));
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene("Profile");
         }
         else
         {
-            SceneManager.LoadScene(6);
+            SceneManager.LoadScene("Login");
         }
     }
-    public void Theory()
+    public void TheoryMenu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Menu");
     }
 
     public void RegMenu()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("RegisterMenu");
     }
 
     public void Register()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene("Register");
     }
 
     public void  scan()
     {
-        SceneManager.LoadScene(5);
+        if (PlayerPrefs.GetString("userName") != "" && PlayerPrefs.GetString("password") != "")
+        {
+            SceneManager.LoadScene("Scan");
+        }
+        else
+        {
+            /* if (UnityEditor.EditorUtility.DisplayDialog("AR-Geometry", "You need Log in", "Login", "Exit"))
+             {
+                 SceneManager.LoadScene(6);
+             }
+             else
+             {
+                 Application.Quit();
+             }*/
+        }
+    }
+    void showMessaeg()
+    {
+        
     }
 
-    
+    public void Theory()
+    {
+        SceneManager.LoadScene("NewTheory");
+    }
+    public void Testing()
+    {
+        SceneManager.LoadScene("TestContent");
+    }
 }
