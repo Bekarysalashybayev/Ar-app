@@ -23,13 +23,13 @@ public class TDetail : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(GeTheories("1"));
+        StartCoroutine(GeTheories(id));
         ck.onClick.AddListener( ()=> { play(); });
     }
 
     void play()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("NewTheory");
     }
 
     public IEnumerator GeTheories(string id)

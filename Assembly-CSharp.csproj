@@ -102,12 +102,14 @@
     <Compile Include="Assets\Scripts\ContentTheory.cs" />
     <Compile Include="Assets\Scripts\example.cs" />
     <Compile Include="Assets\Scripts\Level.cs" />
+    <Compile Include="Assets\Scripts\Menu.cs" />
     <Compile Include="Assets\Scripts\NewLogin.cs" />
     <Compile Include="Assets\Scripts\newMenu.cs" />
     <Compile Include="Assets\Scripts\NewRegister.cs" />
     <Compile Include="Assets\Scripts\Profile.cs" />
     <Compile Include="Assets\Scripts\Result.cs" />
     <Compile Include="Assets\Scripts\SimpleJSON.cs" />
+    <Compile Include="Assets\Scripts\Task.cs" />
     <Compile Include="Assets\Scripts\TDetail.cs" />
     <Compile Include="Assets\Scripts\Testing.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />

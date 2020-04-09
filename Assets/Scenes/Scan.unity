@@ -1016,7 +1016,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2120302857}
-        m_MethodName: Theory
+        m_MethodName: TheoryMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

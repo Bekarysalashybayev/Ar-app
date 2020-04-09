@@ -81,14 +81,18 @@ public class ContentTheory : MonoBehaviour
 
     void InitializeItemView(GameObject viewGameObject, TeoriesItemModel model)
     {
-        if(model.id =="0")
+        TeoriesItemView view = new TeoriesItemView(viewGameObject.transform);
+        view.textTitle.text = model.name;
+
+        if (model.id == "0")
         {
-            viewGameObject.SetActive(false);
+            // viewGameObject.SetActive(false);
+            GameObject btn = view.tButton.gameObject;
+            btn.SetActive(false);
+            
         }
         else
         {
-            TeoriesItemView view = new TeoriesItemView(viewGameObject.transform);
-            view.textTitle.text = model.name;
             view.tButton.onClick.AddListener(
                 () =>
                 {
@@ -97,12 +101,15 @@ public class ContentTheory : MonoBehaviour
                     {
                         if (theoryGameObject.activeSelf)
                         {
+                            TDetail.id = model.id;
                             SceneManager.LoadScene("NewThoryDesc");
                            // Debug.Log(model.id + "is clicked by theory");
                         }
                         else if (testGameObject.activeSelf)
                         {
-                            Debug.Log(model.id + "is clicked by test");
+                            Task.theoryid = model.id;
+                            SceneManager.LoadScene("TheoryTask");
+                            //Debug.Log(model.id + "is clicked by test");
                         }
                     }
                     else
@@ -134,7 +141,8 @@ public class ContentTheory : MonoBehaviour
         }
         else
         {
-            if (www.downloadHandler.text == "0")
+            Debug.Log(www.downloadHandler.text);
+            if (www.downloadHandler.text.Contains("div"))
             {
                 var results = new TeoriesItemModel[1];
 

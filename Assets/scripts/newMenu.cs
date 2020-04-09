@@ -1,11 +1,30 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEditor;
 
 public class newMenu : MonoBehaviour
 {
+    void Start()
+    {
+       /* menu.onClick.AddListener(()=> { SceneManager.LoadScene("Menu");  });
+        Scan.onClick.AddListener(() => { SceneManager.LoadScene("Scan");  });
+        profile.onClick.AddListener(() => {
 
-    
+            if (PlayerPrefs.GetString("userName") != "" && PlayerPrefs.GetString("password") != "")
+            {
+                Debug.Log(PlayerPrefs.GetString("userName"));
+                SceneManager.LoadScene("Profile");
+            }
+            else
+            {
+                SceneManager.LoadScene("Login");
+            }
+        });*/
+    }
+
+    private void Update()
+    {
+        
+    }
 
     public void Login()
     {
@@ -52,18 +71,5 @@ public class newMenu : MonoBehaviour
                  Application.Quit();
              }*/
         }
-    }
-    void showMessaeg()
-    {
-        
-    }
-
-    public void Theory()
-    {
-        SceneManager.LoadScene("NewTheory");
-    }
-    public void Testing()
-    {
-        SceneManager.LoadScene("TestContent");
     }
 }
