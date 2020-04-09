@@ -41,6 +41,18 @@ public class Menu : MonoBehaviour
 
         }
     }
+    public void Progress()
+    {
+        if (PlayerPrefs.GetString("userName") != "" && PlayerPrefs.GetString("password") != "")
+        {
+            SceneManager.LoadScene("Progress");
+        }
+        else
+        {
+            message.SetActive(true);
+
+        }
+    }
 
     public void login()
     {

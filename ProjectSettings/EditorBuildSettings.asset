@@ -80,4 +80,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TheoryTask.unity
     guid: a8593e92a98d6ab42ac255320a6358a1
+  - enabled: 1
+    path: Assets/Scenes/Progress.unity
+    guid: b3238b843411b724cbf7c0c27210204a
+  - enabled: 1
+    path: Assets/Scenes/ProgressPage.unity
+    guid: 3f4c85b64f2ebce4fbd35f65b2db9d40
   m_configObjects: {}

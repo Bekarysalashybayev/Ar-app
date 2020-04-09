@@ -54,7 +54,10 @@ public class ContentTheory : MonoBehaviour
             this.start = false;
         }
     }
-
+    public void Cancel()
+    {
+        this.name.text = "";
+    }
     public void UpdateItems()
     {
         string url = "http://augmented.zzz.com.ua/ar/getTheories.php";

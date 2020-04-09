@@ -107,6 +107,8 @@
     <Compile Include="Assets\Scripts\newMenu.cs" />
     <Compile Include="Assets\Scripts\NewRegister.cs" />
     <Compile Include="Assets\Scripts\Profile.cs" />
+    <Compile Include="Assets\Scripts\Progress.cs" />
+    <Compile Include="Assets\Scripts\progressAll.cs" />
     <Compile Include="Assets\Scripts\Result.cs" />
     <Compile Include="Assets\Scripts\SimpleJSON.cs" />
     <Compile Include="Assets\Scripts\Task.cs" />

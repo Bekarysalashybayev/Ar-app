@@ -163,6 +163,8 @@ public class Testing : MonoBehaviour
         }
         Result.resultT = score;
 
+        Result.thoeryid = theoryid;
+        Result.levelid = level;
         SceneManager.LoadScene("Level-Def");
        
     }

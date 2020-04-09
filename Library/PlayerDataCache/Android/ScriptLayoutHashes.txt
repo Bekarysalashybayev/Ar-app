@@ -14,6 +14,9 @@ Assets/Scenes/Level.unity
 Assets/Scenes/Level-Def.unity
 Assets/Scenes/NewTheory.unity
 Assets/Scenes/TestContent.unity
+Assets/Scenes/TheoryTask.unity
+Assets/Scenes/Progress.unity
+Assets/Scenes/ProgressPage.unity
 SceneListEnd?
 71bb6a6b6c8f052f948db64c7dd3ca4f VuforiaScripts.dll:.BoundingBoxRenderer
 3c08375166df118bd1801438fc36b92f Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
@@ -104,6 +107,7 @@ aa165095bcf0f4d99594ea33df01c81b UnityEngine.UI.dll:UnityEngine.UI.Slider
 abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 fe29ae2aa38c9237768b1f22cddf449d Assembly-CSharp.dll:Lean.Touch.LeanTwistRotateAxis
+7c18161cee91feb2c14f9765993a4a43 Assembly-CSharp.dll:.Level
 eb27b06c0eaa67d17f6c84edaee630af Assembly-CSharp.dll:Lean.Touch.LeanRoll
 cf1ad9af57e51d3949ba525fb4534068 Assembly-CSharp.dll:Lean.Touch.LeanDestroy
 8f9a3cedbcff5227ff4a820dbbc20f46 Assembly-CSharp.dll:.NewLogin
@@ -259,6 +263,7 @@ e1300922cc039f41ab46a47f4cb05898 Unity.TextMeshPro.dll:TMPro.TMP_Settings
 7a25fcb81bf8eb2f157d591103c1dd7b UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.TestResultRendererCallback
+64dfff5d090fc3ccd4de889cce7892a0 Assembly-CSharp.dll:.Menu
 e2efc7cfa5234245c18c3065917d8945 Assembly-CSharp.dll:Lean.Touch.LeanPath
 931f489e44eadf809e9310429c99dde5 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioListenerExtension
 fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
@@ -288,6 +293,7 @@ e63944317d2f5958e31963668bb29158 Assembly-CSharp.dll:TMPro.Examples.VertexShakeB
 9277194e3007f91c41cc4dd392ebc5cb Assembly-CSharp.dll:Lean.Touch.LeanSelectableSpriteRendererColor
 5bb0c23ac2810973880e592724a69354 Assembly-CSharp.dll:TMPro.Examples.Benchmark02
 e793e4ea83e3d40a5a248af575e7d5cc Assembly-CSharp.dll:Lean.Touch.LeanFingerTap
+44f5bcd2f5320ce906f54e58e91bbaf1 Assembly-CSharp.dll:.Result
 bd3f0ca738703903e759f77536ed74fd Assembly-CSharp.dll:TMPro.Examples.TMP_UiFrameRateCounter
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:TMPro.Examples.VertexColorCycler
 e63944317d2f5958e31963668bb29158 Assembly-CSharp.dll:TMPro.Examples.VertexZoom
@@ -340,6 +346,7 @@ fe10de86e42ce80dc24cf76ac1c87c2a Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
 330f62fcfa21b2047340eab154927cfc Assembly-CSharp.dll:Lean.Touch.LeanSelectableRendererColor
+354744415a28f6ac78f9d7a495c03958 Assembly-CSharp.dll:.Task
 0077fc8e4fbae67f80e80ebd534de5a0 Vuforia.UnityExtensions.dll:Vuforia.AnchorBehaviour
 ff1cfd768b207053e073f8002f937b81 Vuforia.UnityExtensions.dll:Vuforia.AnchorInputListenerBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.BackgroundPlaneBehaviour
@@ -373,5 +380,5 @@ fe10de86e42ce80dc24cf76ac1c87c2a Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 69167579cf7fcbb2676fc1e675963dcd Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehaviour
 fbbf64dcbe0662e3eda1dec45ea8f895 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
-7c18161cee91feb2c14f9765993a4a43 Assembly-CSharp.dll:.Level
-a6a3b6c458fafbb69fd38a17827a25a4 Assembly-CSharp.dll:.Result
+aacca75a5064ff9448f1bb0267623adb Assembly-CSharp.dll:.Progress
+94e9264ee43d694eb6626b914643cab8 Assembly-CSharp.dll:.progressAll
