@@ -6,6 +6,7 @@ using UnityEngine.Networking;
 using SimpleJSON;
 using static ContentTheory;
 using System;
+using System.Collections.Generic;
 
 public class Testing : MonoBehaviour
 {
@@ -107,7 +108,7 @@ public class Testing : MonoBehaviour
 
         
 
-        if (this.localTestNumber < 13)
+        if (this.localTestNumber < (this.testNumbers.Length-2))
         {
             message.text = "";
             btn.GetComponentInChildren<Text>().text = "Next";
@@ -115,7 +116,7 @@ public class Testing : MonoBehaviour
             this.changetest = true;
             OnReceivedBodyTest(testNumbers[this.localTestNumber]);
         }
-        else if (this.localTestNumber == 13)
+        else if (this.localTestNumber == (this.testNumbers.Length - 2))
         {
             message.text = "Если твой балл будет больше прежнего то ответ обновляется";
             btn.GetComponentInChildren<Text>().text = "Finish";
@@ -239,16 +240,39 @@ public class Testing : MonoBehaviour
                 );
      }
 
+
+    public static List<T> Randomize<T>(List<T> list)
+    {
+        List<T> randomizedList = new List<T>();
+        System.Random rnd = new System.Random();
+        while (list.Count > 0)
+        {
+            int index = rnd.Next(0, list.Count); //pick a random item from the master list
+            randomizedList.Add(list[index]); //place it at the end of the randomized list
+            list.RemoveAt(index);
+        }
+        return randomizedList;
+    }
+
+
+
     void InitializeItemContent(GameObject viewGameObject, TestNumber model)
     {
+        List<String> list = new List<String>();
+        list.Add(model.Answer);
+        list.Add(model.Choice1);
+        list.Add(model.Choice2);
+        list.Add(model.Choice3);
+
+        list = Randomize<String>(list);
 
         TestItemView view = new TestItemView(viewGameObject.transform);
          view.text.text = model.Task;
 
-        view.Answer.GetComponentInChildren<Text>().text = model.Answer;
-        view.Answer1.GetComponentInChildren<Text>().text = model.Choice1;
-        view.Answer2.GetComponentInChildren<Text>().text = model.Choice2;
-        view.Answer3.GetComponentInChildren<Text>().text = model.Choice3;
+        view.Answer.GetComponentInChildren<Text>().text = list[0];
+        view.Answer1.GetComponentInChildren<Text>().text = list[1];
+        view.Answer2.GetComponentInChildren<Text>().text = list[2];
+        view.Answer3.GetComponentInChildren<Text>().text = list[3];
          if (view.Answer.GetComponentInChildren<Text>().text == this.answereds[this.localTestNumber].answer)
           {
             view.Answer.GetComponent<Image>().color = Color.green;
@@ -385,6 +409,7 @@ public class Testing : MonoBehaviour
             }
         }
     }
+
 
     public class TeoriesItemView
     {

@@ -41,7 +41,7 @@ public class NewLogin : MonoBehaviour
         form.AddField("loginUser", username);
         form.AddField("loginPass", password);
 
-        using (UnityWebRequest www = UnityWebRequest.Post("https://bekarysalashybaev.000webhostapp.com/arrapp/getDate.php", form))
+        using (UnityWebRequest www = UnityWebRequest.Post("http://augmented.zzz.com.ua/ar/login.php", form))
         {
             yield return www.SendWebRequest();
 
@@ -51,15 +51,15 @@ public class NewLogin : MonoBehaviour
             }
             else
             {
-                Debug.Log(www.downloadHandler.text);
-                if (www.downloadHandler.text.Equals("UserName does not exists"))
+                //Debug.Log(www.downloadHandler.text);
+                if (www.downloadHandler.text.Contains("UserName does not exists"))
                 {
                     errorUserName.text = "UserName is Error";
                 }
                 
                 else
                 {
-                    if (www.downloadHandler.text.Equals("Wrong Credentials"))
+                    if (www.downloadHandler.text.Contains("Password incorrect"))
                     {
                         errorUserName.text = "";
                         errorPaswword.text = "Password is Error";
@@ -67,11 +67,11 @@ public class NewLogin : MonoBehaviour
                     else
                     {
                         errorPaswword.text = "";
-
+                        PlayerPrefs.SetString("user", "");
                         PlayerPrefs.SetString("userName", username);
                         PlayerPrefs.SetString("password", password);
 
-                        SceneManager.LoadScene(4);
+                        SceneManager.LoadScene("Profile");
                     }
                     
                 }

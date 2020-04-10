@@ -63,7 +63,7 @@ public class Level : MonoBehaviour
     public void playEasy()
     {
         Testing.level = "1";
-        SceneManager.LoadScene(7);
+        SceneManager.LoadScene("Testing");
     }
     public void playMedium()
     {
@@ -71,7 +71,7 @@ public class Level : MonoBehaviour
         if (levelMedium > 6)
         {
             Testing.level = "2";
-            SceneManager.LoadScene(7);
+            SceneManager.LoadScene("Testing");
         }
     }
     public void playHard()
@@ -79,7 +79,7 @@ public class Level : MonoBehaviour
         if (levelHard > 6)
         {
             Testing.level = "3";
-            SceneManager.LoadScene(7);
+            SceneManager.LoadScene("Testing");
         }
     }
 

@@ -34,6 +34,7 @@ public class NewRegister : MonoBehaviour
 
     private void Start()
     {
+        this.codeToSend = getRandomCode();
         btn1.onClick.AddListener(
                 () =>
                 {
@@ -82,7 +83,7 @@ public class NewRegister : MonoBehaviour
                     }
                     else
                     {
-                        string url = "https://bekarysalashybaev.000webhostapp.com/arrapp/checkEmail.php";
+                        string url = "http://augmented.zzz.com.ua/ar/checkEmail.php";
                         WWWForm form = new WWWForm();
                         form.AddField("loginUser", email.text);
                         UnityWebRequest www = UnityWebRequest.Post(url, form);
@@ -159,7 +160,7 @@ public class NewRegister : MonoBehaviour
         form.AddField("email", email);
         form.AddField("password", password);
 
-        using (UnityWebRequest www = UnityWebRequest.Post("https://bekarysalashybaev.000webhostapp.com/arrapp/register.php", form))
+        using (UnityWebRequest www = UnityWebRequest.Post("http://augmented.zzz.com.ua/ar/register.php", form))
         {
             yield return www.SendWebRequest();
 
@@ -170,12 +171,13 @@ public class NewRegister : MonoBehaviour
             else
             {
                 Debug.Log(www.downloadHandler.text);
-                if (www.downloadHandler.text.Equals("New record created successfully"))
+                if (www.downloadHandler.text.Contains("New record created successfully"))
                 {
+                    PlayerPrefs.SetString("user", "");
                     PlayerPrefs.SetString("userName", email);
                     PlayerPrefs.SetString("password", password);
 
-                    SceneManager.LoadScene(4);
+                    SceneManager.LoadScene("Menu");
                 }
                 else
                 {
@@ -198,7 +200,7 @@ public class NewRegister : MonoBehaviour
         else
         {
             Debug.Log(www.downloadHandler.text);
-            if (www.downloadHandler.text == "username exists")
+            if (www.downloadHandler.text.Contains("Username exists"))
             {
 
                 error3.text = "Email already used";
@@ -220,7 +222,7 @@ public class NewRegister : MonoBehaviour
         form.AddField("email", email);
         form.AddField("code", this.codeToSend);
 
-        using (UnityWebRequest www = UnityWebRequest.Post("https://bekarysalashybaev.000webhostapp.com/arrapp/confirmEmail.php", form))
+        using (UnityWebRequest www = UnityWebRequest.Post("https://ansaryergesh.com/confirmEmail/confirmEmail.php", form))
         {
             yield return www.SendWebRequest();
 
@@ -234,4 +236,17 @@ public class NewRegister : MonoBehaviour
             }
         }
     }
+
+
+    public string getRandomCode()
+    {
+        string number = "";
+        for (int i=0; i<6; i++)
+        {
+            number = number + UnityEngine.Random.Range(0, 9);
+        }
+
+        return number;
+    }
+
 }

@@ -28,9 +28,9 @@ public class Profile : MonoBehaviour
     {
         if (PlayerPrefs.GetString("user") == "")
         {
-            string url = "https://bekarysalashybaev.000webhostapp.com/arrapp/getUser.php";
+            string url = "http://augmented.zzz.com.ua/ar/getUser.php";
             WWWForm form = new WWWForm();
-            form.AddField("username", PlayerPrefs.GetString("userName"));
+            form.AddField("email", PlayerPrefs.GetString("userName"));
             UnityWebRequest www = UnityWebRequest.Post(url, form);
             StartCoroutine(GetUser(www));
         }
@@ -71,7 +71,7 @@ public class Profile : MonoBehaviour
         }
         else
         {
-            if (www.downloadHandler.text == "0")
+            if (www.downloadHandler.text.Contains("div"))
             {
                 //Debug.Log(www.downloadHandler.text);
                 SceneManager.LoadScene(6);
@@ -79,10 +79,8 @@ public class Profile : MonoBehaviour
             else
             {
                 User[] users = JsonHelper.getJsonArray<User>(www.downloadHandler.text);
-                userName.text = users[0].firstName + " " + users[0].lastName;
-                score.text = "Scores: " + users[0].level;
-                PlayerPrefs.SetString("user", users[0].firstName + " " + users[0].lastName);
-                PlayerPrefs.SetString("score", users[0].level);
+                userName.text = users[0].FirstName + " " + users[0].LastName;
+                PlayerPrefs.SetString("user", users[0].FirstName + " " + users[0].LastName);
                 PlayerPrefs.SetString("id", users[0].id);
                 //Debug.Log(www.downloadHandler.text);
                 //Debug.Log(PlayerPrefs.GetString("user"));
@@ -96,8 +94,8 @@ public class Profile : MonoBehaviour
     public class User
     {
         public string id;
-        public string firstName;
-        public string lastName;
-        public string level;
+        public string FirstName;
+        public string LastName;
+        public string Score;
     }
 }
