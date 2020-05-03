@@ -61,7 +61,12 @@ public class Testing : MonoBehaviour
         
     }
 
-
+    public void back()
+    {
+        Level.category = category;
+        Level.theoryid = theoryid;
+        SceneManager.LoadScene("Level");
+    }
     void Update()
     {
        if (first == false)
@@ -151,13 +156,14 @@ public class Testing : MonoBehaviour
                 //Debug.Log(this.testNumbers[i].Answer);
             }
         }
+
         if (score > this.scoreFirst)
         {
-            string url = "augmented.zzz.com.ua/ar/saveResult.php";
+            string url = "http://augmented.zzz.com.ua/ar/saveResult.php";
             WWWForm form = new WWWForm();
             form.AddField("id", PlayerPrefs.GetString("id"));
-            form.AddField("theoryid", level);
-            form.AddField("levelid", theoryid);
+            form.AddField("theoryid", theoryid);
+            form.AddField("levelid", level);
             form.AddField("score", score);
             UnityWebRequest www = UnityWebRequest.Post(url, form);
             StartCoroutine(SaveScore(www)); Debug.Log(score);
@@ -368,6 +374,7 @@ public class Testing : MonoBehaviour
         }
         else
         {
+            Debug.Log(www.downloadHandler.text);
             if (www.downloadHandler.text != "0")
             {
                 Debug.Log(www.downloadHandler.text);

@@ -57,7 +57,10 @@ public class Profile : MonoBehaviour
         SceneManager.LoadScene(6);
     }
 
-
+    public void progressPage()
+    {
+        SceneManager.LoadScene("Progress");
+    }
 
     IEnumerator GetUser(UnityWebRequest www)
     {

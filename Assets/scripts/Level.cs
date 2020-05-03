@@ -13,6 +13,7 @@ public class Level : MonoBehaviour
 
     public int levelMedium = 0;
     public int levelHard = 0;
+    public int levelEasy = 0;
 
     public GameObject medium;
     public GameObject medium1;
@@ -20,6 +21,9 @@ public class Level : MonoBehaviour
     public GameObject hard1;
 
     public Text theoryName;
+    public Text easyText;
+    public Text mediumText;
+    public Text hardText;
 
     int count = 1;
 
@@ -27,6 +31,8 @@ public class Level : MonoBehaviour
     {
         StartCoroutine(GetScore("1"));
         StartCoroutine(GetScore("2"));
+        StartCoroutine(GetScore("3"));
+
         theoryName.text = category;
 
         Testing.category = category;
@@ -44,20 +50,29 @@ public class Level : MonoBehaviour
     {
         if (this.count == 1)
         {
-            if (levelMedium > 6)
+            easyText.text = levelEasy + "/15";
+           
+            if (levelEasy > 6)
             {
                 medium.SetActive(false);
                 medium1.SetActive(true);
+                mediumText.text = levelMedium + "/15";
             }
-            if (levelHard > 6)
+            if (levelMedium > 6)
             {
                 hard.SetActive(false);
                 hard1.SetActive(true);
+                hardText.text = levelHard + "/15";
             }
         }
         
 
 
+    }
+
+    public void back()
+    {
+        SceneManager.LoadScene("TestContent");
     }
 
     public void playEasy()
@@ -68,7 +83,7 @@ public class Level : MonoBehaviour
     public void playMedium()
     {
 
-        if (levelMedium > 6)
+        if (levelEasy > 6)
         {
             Testing.level = "2";
             SceneManager.LoadScene("Testing");
@@ -76,7 +91,7 @@ public class Level : MonoBehaviour
     }
     public void playHard()
     {
-        if (levelHard > 6)
+        if (levelMedium > 6)
         {
             Testing.level = "3";
             SceneManager.LoadScene("Testing");
@@ -113,10 +128,14 @@ public class Level : MonoBehaviour
                     Int32.TryParse(strlist[0], out score);
                     //Debug.Log(score);
                     if (levelid == "1")
+                    {
+                        this.levelEasy = score;
+                    }
+                    else if (levelid == "2")
                      {
                          this.levelMedium = score;
                      }
-                     else
+                     else 
                      {
                          this.levelHard = score;
                      }
