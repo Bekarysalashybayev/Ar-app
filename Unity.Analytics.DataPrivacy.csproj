@@ -648,9 +648,19 @@
     <Compile Include="Packages\com.unity.analytics\DataPrivacy\DataPrivacyButton.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Editor\Vuforia\CylinderTargetTextures\VuforiaMars_Images\authoringinfo.xml" />
+    <None Include="Assets\Lean\Common\Examples\Fonts\OFL.txt" />
+    <None Include="Assets\Lean\Common\Examples\Shaders\Alpha.shader" />
+    <None Include="Assets\Lean\Common\Examples\Shaders\Object.shader" />
+    <None Include="Assets\Lean\Common\Examples\Shaders\Skybox.shader" />
+    <None Include="Assets\Lean\READ ME.txt" />
+    <None Include="Assets\StreamingAssets\Vuforia\ARBookDataBase.xml" />
+    <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_Images.xml" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Fonts\Lato2OFL\OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Fonts\Lato2OFL\README.txt" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />

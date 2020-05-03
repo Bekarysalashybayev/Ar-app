@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/bekar/Desktop/Все материалы для Дипломной работы/qwerty.apk
+C:/Users/bekar/Desktop/Все материалы для Дипломной работы/ArStereometry.apk
 SceneListBegin?
 Assets/Scenes/Menu.unity
 Assets/Scenes/NewThoryDesc.unity
@@ -109,7 +109,7 @@ aa165095bcf0f4d99594ea33df01c81b UnityEngine.UI.dll:UnityEngine.UI.Slider
 abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 fe29ae2aa38c9237768b1f22cddf449d Assembly-CSharp.dll:Lean.Touch.LeanTwistRotateAxis
-7c18161cee91feb2c14f9765993a4a43 Assembly-CSharp.dll:.Level
+2930469204c346a43e72a05cb4172d85 Assembly-CSharp.dll:.Level
 eb27b06c0eaa67d17f6c84edaee630af Assembly-CSharp.dll:Lean.Touch.LeanRoll
 cf1ad9af57e51d3949ba525fb4534068 Assembly-CSharp.dll:Lean.Touch.LeanDestroy
 8f9a3cedbcff5227ff4a820dbbc20f46 Assembly-CSharp.dll:.NewLogin

@@ -44,7 +44,7 @@ public class Profile : MonoBehaviour
     void OnReceivedModels()
     {
         userName.text = PlayerPrefs.GetString("user");
-        score.text = "Scores: " + PlayerPrefs.GetString("score");
+        score.text = "Scores: " + 37;
     }
 
     public void LogOut()
